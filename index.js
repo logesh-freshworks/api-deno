@@ -21,7 +21,8 @@ function handleRequest(request) {
   if (pathname.startsWith("/json")) {
     // Use stringify function to convert javascript object to JSON string.
     const json = JSON.stringify({
-      message: "Hello from <b>Deno Deploy</b>.",
+      message:
+        "Hello from <b>Deno Deploy</b> <img src='https://cdn4.vectorstock.com/i/thumb-large/19/58/no-image-vector-30371958.jpg' />.",
     });
 
     return new Response(json, {
